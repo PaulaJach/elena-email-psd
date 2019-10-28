@@ -1,0 +1,35 @@
+{
+  "name": "elena-email-psd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  	"test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "browser": "open dist/index.html",
+    "dev": "yarn browser && yarn watch",
+    "fix-cs": "yarn js-beautify -r *.js src/*.js *.html && yarn scssfmt scss/*.scss"
+  },
+  "repository": {
+  	"type": "git",
+  	"url": "git@github.com:PaulaJach/elena-email-psd.git"
+  },
+  "author": "Paula Jach <paulajach92@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.7.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
+    "js-beautify": "^1.10.2",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "scssfmt": "^1.0.7",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
