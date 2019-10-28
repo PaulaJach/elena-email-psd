@@ -1,3 +1,70 @@
-body {
-	background-color: lightblue;
+* {
+	box-sizing: border-box;
 }
+
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#landingPage {
+	background: url("../img/bg1.png") center / cover no-repeat fixed;
+	height: 100vh;
+}
+
+.container {
+	max-width: 800px;
+	width: 100%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo {
+	padding-top: 64px;
+}
+
+.navbar--nav__link {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	padding: 40px 20px;
+}
+.navbar--nav__link a {
+	text-decoration: none;
+	color: white;
+}
+.landingPage--title {
+	font-size: 53px;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	padding-top: 35px;
+}
+.landingPage--subtitle {
+	font-size: 15px;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 80px;
+}
+.landingPage--btn {
+	font-size: 15px;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+	background: #50c3af;
+	padding: 20px 40px;
+	border-radius: 30px;
+	margin-top: 40px;
+}
+
+.landingPage--btn::before,
+.landingPage--btn::after {
+	content: "";
+}
+
+
+
+
+
