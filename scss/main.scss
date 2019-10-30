@@ -8,6 +8,16 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+h3 {
+	font-size: 16px;
+	color: #384048;
+	text-transform: uppercase;
+}
+p {
+	color: #787b80;
+}
+
 #landingPage {
 	background: url("../img/bg1.png") center / cover no-repeat fixed;
 	height: 100vh;
@@ -16,11 +26,14 @@ body {
 .container {
 	max-width: 800px;
 	width: 100%;
-    margin: auto;
+    margin: auto;  
+}
+.landingPage--content {
+	height: 100vh;
+	margin: auto;
     text-align: center;
     text-transform: uppercase;
 }
-
 .logo {
 	padding-top: 64px;
 }
@@ -42,27 +55,64 @@ body {
 	font-weight: 700;
 	padding-top: 35px;
 }
+
+
 .landingPage--subtitle {
-	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.rectangle {
+	align-self: center;
+	padding: 40px;
+}
+
+.landingPage--subtitle__text {
+	font-size: 16px;
 	color: white;
 	font-weight: 700;
-	margin-bottom: 80px;
+	align-self: center;	
 }
 .landingPage--btn {
-	font-size: 15px;
+	font-size: 16px;
 	color: white;
 	font-weight: 700;
 	text-decoration: none;
 	background: #50c3af;
-	padding: 20px 40px;
+	padding: 15px 50px;
 	border-radius: 30px;
 	margin-top: 40px;
 }
 
-.landingPage--btn::before,
-.landingPage--btn::after {
-	content: "";
+#userGroups {
+	background-color: #eeeeef;
 }
+.userGroup--content {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.userGroup {
+	width: 33.33%;
+	align-self: center;
+	align-items: stretch;
+	padding: 54px 30px;
+	text-align: center;
+
+}
+
+.userGroup--img {
+	align-items: center;
+}
+
+.userGroup--para {
+	align-self: baseline;
+}
+
+
+
 
 
 
