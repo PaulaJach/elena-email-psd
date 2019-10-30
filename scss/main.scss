@@ -9,6 +9,12 @@ body {
 	padding: 0;
 }
 
+h2 {
+	font-size: 18px;
+	color: #384048;
+	text-transform: uppercase;
+}
+
 h3 {
 	font-size: 16px;
 	color: #384048;
@@ -16,6 +22,14 @@ h3 {
 }
 p {
 	color: #787b80;
+}
+
+.btn {
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	padding: 10px 16px;
+
 }
 
 #landingPage {
@@ -97,7 +111,7 @@ p {
 .userGroup {
 	width: 33.33%;
 	align-self: center;
-	align-items: stretch;
+	
 	padding: 54px 30px;
 	text-align: center;
 
@@ -113,8 +127,59 @@ p {
 
 
 
+.template--content {
+	display: flex;
+	justify-content: center;
+	padding: 50px 35px;
+	width: 50%;
+	text-align: left;
+}
+.template--btn {
+	font-size: 14px;
+	color: white;
+	
+	text-decoration: none;
+	background: #50c3af;
+	padding: 10px 16px;
+	border-radius: 30px;
+	margin-top: 40px;
+}
+
+#support,
+#copyright {
+	background-color: #eeeeef;
+}
 
 
+.support--btn {
+	@extend.btn;
+	background: #d2d5da;
+	
+}
 
+.features--content,
+.sending--content,
+.blog--content {
+	display: flex;
+	flex-direction: row;
+	padding: 40px;
+
+}
+
+.feature {
+	width: 33.33%;
+	align-self: center;
+	
+	padding: 54px 30px;
+	text-align: center;
+
+}
+
+#send {
+	background-color: #eeeeef;
+}
+#footer {
+	background-color: #50c3af;
+}
 
 
