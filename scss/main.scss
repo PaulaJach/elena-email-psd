@@ -111,33 +111,63 @@ p {
 .userGroup {
 	width: 33.33%;
 	align-self: center;
-	
+	justify-content: space-around;
 	padding: 54px 30px;
 	text-align: center;
 
 }
 
 .userGroup--img {
-	align-items: center;
+	height: 43px;
 }
 
-.userGroup--para {
-	align-self: baseline;
+.userGroup--line {
+	border: none;
+	height: 2px;
+	color: #e2e3e4;
+	background-color: #e2e3e4;
+	max-width: 132px;
+	width: 100%;
 }
-
 
 
 .template--content {
 	display: flex;
-	justify-content: center;
-	padding: 50px 35px;
+	
+	padding-top: 75px;
+	padding-bottom: 70px;
 	width: 50%;
 	text-align: left;
 }
+.template {
+	
+	text-align: left;
+}
+
+.template--img {
+	max-width: 300px;
+	width: 100%;
+	
+}
+
+.template--line {
+	border: none;
+	height: 2px;
+	color: #e2e3e4;
+	background-color: #e2e3e4;
+	padding-right: 0;
+	width: 200px;
+	margin-left: 0;
+
+}
+.template--para {
+	padding: 20px 0;
+	padding-right: 20px;
+}
+
 .template--btn {
 	font-size: 14px;
 	color: white;
-	
 	text-decoration: none;
 	background: #50c3af;
 	padding: 10px 16px;
@@ -149,7 +179,19 @@ p {
 #copyright {
 	background-color: #eeeeef;
 }
+.support--container {
+	padding: 60px 30px;
+}
 
+
+
+.support--title {
+	
+}
+
+.support--para {
+	padding: 20px 0;
+}
 
 .support--btn {
 	@extend.btn;
