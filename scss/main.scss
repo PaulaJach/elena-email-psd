@@ -200,8 +200,7 @@ p {
 }
 
 .features--content,
-.sending--content,
-.blog--content {
+.sending--content {
 	display: flex;
 	flex-direction: row;
 	padding: 40px;
@@ -220,8 +219,72 @@ p {
 #send {
 	background-color: #eeeeef;
 }
+
+.blog--content {
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 0;
+}
+.blog--image {
+	width: 100%;
+}
+.blog--text {
+	padding-left: 20px;
+}
 #footer {
 	background-color: #50c3af;
 }
+.footer--content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px 0px;
+}
+
+.footer--title {
+	text-align: center;
+	color: white;
+}
+.footer--title__star {
+	padding-right: 5px;
+}
+.footer--line {
+	max-width: 265px;
+	border: none;
+	height: 2px;
+	color: #e2e3e4;
+	background-color: #e2e3e4;
+	
+	width: 100%;
+}
+
+.footer--brands {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 40px 0;
+}
 
 
+.copyright--content {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 10px 5px;
+}
+.copyright--text {
+	font-size: 13px;
+	color: #787b80;
+
+}
+.copyright--text__light {
+	color: #aaacaf;
+}
+
+.copyright--icons {
+	align-self: center;
+}
+.copyright--icon {
+	padding-left: 10px;
+}
