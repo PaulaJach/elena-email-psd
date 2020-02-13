@@ -1,5 +1,8 @@
+@import 'media-queries.scss';
+
 * {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 body {
 	font-family: 'PT Sans', sans-serif;
@@ -69,6 +72,11 @@ p {
 	.logo {
 		padding-top: 64px;
 	}
+	.navbar--nav__links {
+		@include sm {
+			display: none;
+		}
+	}
 	.navbar--nav__link {
 		display: inline-block;
 		font-family: 'Open Sans', sans-serif;
@@ -85,6 +93,10 @@ p {
 		font-family: 'Ubuntu', sans-serif;
 		font-weight: 700;
 		padding-top: 35px;
+		@include sm {
+			font-size: 40px;
+			padding: 20px;
+		}
 	}
 	.landingPage--subtitle {
 		display: flex;
@@ -93,6 +105,9 @@ p {
 		.landingPage--rectangle {
 			align-self: center;
 			padding: 40px;
+			@include sm {
+				display: none;
+			}
 		}
 	}
 	
@@ -118,18 +133,27 @@ p {
 .userGroup--content {
 	display: flex;
 	flex-direction: row;
+	@include sm {
+		display: block;
+	}
 	.userGroup {
 		width: 33.33%;
 		align-self: center;
 		justify-content: space-around;
 		padding: 54px 30px;
 		text-align: center;
+		
 		.userGroup--img {
 			height: 43px;
 		}		
 		.userGroup--line {
 			@extend.line;
 			max-width: 132px;
+		}
+		@include sm {
+			width: 100%;
+			padding: 24px 30px;
+			
 		}
 	}
 }
@@ -139,15 +163,27 @@ p {
 	padding: 80px 35px;
 	text-align: left;
 	justify-content: space-between;
+	@include sm {
+		display: block;
+	}
 	.template--column {
 		text-align: left;
 		width: 45%;
+		@include sm {
+			width: 100%;
+			padding: 20px 0;
+		}
 	}
 	.template--img {
 		width: 100%;
+		@include sm {
+			display: none;
+		}
 	}
 	.template--line {
 		@extend.line;
+		background-image: linear-gradient(to right, gray 10%, white);
+		opacity: .1;
 	}
 	.template--para {
 		padding: 20px 0;
@@ -173,6 +209,8 @@ p {
 	}
 	.support--line {
 		@extend.line;
+		background-image: linear-gradient(to right, gray 10%, white);
+		opacity: .1;
 	}
 	.support--para {
 		padding: 20px 0;
@@ -196,6 +234,9 @@ p {
 	flex-direction: row;
 	padding: 40px 0;
 	justify-content: space-between;
+	@include sm {
+		display: block;
+	}
 
 }
 
@@ -204,11 +245,23 @@ p {
 	align-self: center;
 	padding: 54px 30px;
 	text-align: left;
+	@include sm {
+		width: 100%;
+		text-align: center;
+		padding: 24px 30px;
+	}
 	.feature--img {
 		width: 100%;
+		@include sm {
+			display: none;
+		}
 	}
 	.feature--line {
 		@extend.line;
+		@include sm {
+			background-image: linear-gradient(to right, gray 10%, white);
+			opacity: .1;
+		}
 	}
 	.feature--link {
 		color: #50c3af;
@@ -227,6 +280,10 @@ p {
 	padding: 40px;
 	.article--column {
 		width: 45%;
+		@include sm {
+			width: 100%;
+			padding: 25px 0;
+		}
 		.article--para {
 			padding: 20px 0;
 		}
@@ -248,18 +305,29 @@ p {
 	display: flex;
 	justify-content: space-between;
 	padding: 60px 40px;
+	@include sm {
+		display: block;
+	}
 	.blog--image {
 		width: 40%;
+		@include sm {
+			width: 100%;
+		}
 	}
 	.blog--line {
 		@extend.line;
+		background-image: linear-gradient(to right, gray 10%, white);
+		opacity: .1;
 	}
 	.blog--text {
 		width: 55%;
 		font-size: 14px;
 		margin-bottom: 24px;
+		@include sm {
+			width: 100%;
+		}
 		.blog--para {
-			margin-bottom: 34px;
+			margin-bottom: 40px;
 		}
 	}
 }
@@ -292,6 +360,18 @@ p {
 		justify-content: space-between;
 		align-content: center;
 		padding: 40px 0;
+		@include sm {
+			display: block;
+			padding: 10px 0;
+		}
+		.footer--brand {
+			@include sm {
+				width: 30%;
+				padding: 20px 10px;
+				margin-right: 20px;
+				
+			}
+		}
 	}
 }
 
@@ -300,6 +380,10 @@ p {
 	justify-content: space-between;
 	align-content: center;
 	padding: 10px 5px;
+	@include sm {
+		flex-direction: column;
+		text-align: center;
+	}
 	.copyright--text {
 		font-size: 13px;
 		color: #787b80;
@@ -314,6 +398,8 @@ p {
 		padding-left: 10px;
 	}
 }
+
+
 
 
 
