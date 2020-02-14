@@ -85,6 +85,12 @@ p {
 	.navbar--nav__link a {
 		text-decoration: none;
 		color: white;
+		font-size: inherit;
+		&:hover {
+			text-shadow: 2px 2px 2px black;
+			transition: transform .8s;
+			color: #ccc;
+		}
 	}
 	.landingPage--title {
 		font-size: 53px;
