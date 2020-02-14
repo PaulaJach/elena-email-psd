@@ -2,7 +2,6 @@
 
 * {
 	box-sizing: border-box;
-	overflow-x: hidden;
 }
 body {
 	font-family: 'PT Sans', sans-serif;
@@ -72,16 +71,16 @@ p {
 	.logo {
 		padding-top: 64px;
 	}
-	.navbar--nav__links {
-		@include sm {
-			display: none;
-		}
-	}
+
 	.navbar--nav__link {
 		display: inline-block;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 600;
 		padding: 40px 20px;
+		@include sm {
+			padding: 10px 40px;
+			padding-inline-start: 0px;
+		}
 	}
 	.navbar--nav__link a {
 		text-decoration: none;
@@ -92,9 +91,9 @@ p {
 		color: white;
 		font-family: 'Ubuntu', sans-serif;
 		font-weight: 700;
-		padding-top: 35px;
+		padding-top: 30px;
 		@include sm {
-			font-size: 40px;
+			font-size: 35px;
 			padding: 20px;
 		}
 	}
@@ -359,7 +358,7 @@ p {
 		display: flex;
 		justify-content: space-between;
 		align-content: center;
-		padding: 40px 0;
+		padding: 40px 20px;
 		@include sm {
 			display: block;
 			padding: 10px 0;
@@ -398,6 +397,8 @@ p {
 		padding-left: 10px;
 	}
 }
+
+
 
 
 
