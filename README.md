@@ -1,3 +1,8 @@
 # elena-email-psd
+practicing converting free PSD file to HTML file, BEM-methodology and RWD
 
-In this project I practiced BEM-methodology,SASS and RWD and also converting PSD file to HTML file.
+## technologies I used in project:
+* webpack
+* css
+* flexbox
+* sass
