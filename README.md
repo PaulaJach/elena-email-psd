@@ -3,6 +3,7 @@ practicing converting free PSD file to HTML file, BEM-methodology and RWD
 
 ## technologies I used in project:
 * webpack
-* css
+* html
 * flexbox
 * sass
+* yarn
