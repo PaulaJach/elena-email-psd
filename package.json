@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  	"test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "build": "webpack",
     "browser": "open dist/index.html",
@@ -11,8 +11,8 @@
     "fix-cs": "yarn js-beautify -r *.js src/*.js *.html && yarn scssfmt scss/*.scss"
   },
   "repository": {
-  	"type": "git",
-  	"url": "git@github.com:PaulaJach/elena-email-psd.git"
+    "type": "git",
+    "url": "git@github.com:PaulaJach/elena-email-psd.git"
   },
   "author": "Paula Jach <paulajach92@gmail.com>",
   "license": "MIT",
